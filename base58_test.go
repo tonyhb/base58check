@@ -12,8 +12,8 @@ type testpair struct {
 }
 
 var pairs = []testpair{
-	{10002343, "Tgmc"},
-	{1000, "if"},
+	{10002343, "tGMC"},
+	{1000, "JF"},
 	{0, ""},
 }
 
@@ -21,11 +21,11 @@ func ExampleEncodeBig() {
 	buf := EncodeBig(nil, big.NewInt(123456))
 	fmt.Printf("%s\n", buf)
 	// Output:
-	// CGy
+	// dhZ
 }
 
 func ExampleDecodeToBig() {
-	n, err := DecodeToBig([]byte("CGy"))
+	n, err := DecodeToBig([]byte("dhZ"))
 	if err != nil {
 		fmt.Println("error:", err)
 		return
